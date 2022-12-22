@@ -3,6 +3,7 @@ fn main() {
     update();
     let a:i128 = 256;
     println!("{} + 1 = {}", a , add_one(a));
+    update_two();
 }
 fn update() {
     let my_name: &str = "Twelvetican";
@@ -14,4 +15,8 @@ fn update() {
 }
 fn add_one(a: i128) -> i128 {
     return a+1;
+}
+fn update_two() {
+    let my_dream: &str = "be good at coding";
+    println!("My dream is to {}", my_dream);
 }
