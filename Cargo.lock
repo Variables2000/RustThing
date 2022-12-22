@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "RustLab"
-version = "0.1.0"
+name = "rustcode"
+version = "0.0.1"
