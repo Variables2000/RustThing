@@ -24,12 +24,13 @@ fn main() {
     println!("Test position: x = {}, y = {}", position.x, position.y);
     println!("Test 3D position: x = {}, y = {}, z = {}", pos3d.x, pos3d.y, pos3d.z);
     extra::gref();
+    extra::sys_init();
     get_dice_res();
 }
 fn get_dice_res() {
     println!("You just rolled {}", randomize());
 }
-fn randomize() -> i64 {
+pub fn randomize() -> i64 {
     use rand::Rng;
     let mut rng = rand::thread_rng();
     let i: i64 = rng.gen_range(-999..=999);
