@@ -1,9 +1,17 @@
+#![allow(non_snake_case)]
+#![allow(non_camel_case_types)]
+#![allow(dead_code)]
+struct pos {
+    x: i64,
+    y: i64
+}
 fn main() {
     println!("Hello World!");
     update();
     let a:i128 = 256;
     println!("{} + 1 = {}", a , add_one(a));
     update_two();
+    let _position = pos {x: 32, y: 43};
 }
 fn update() {
     let my_name: &str = "Twelvetican";
