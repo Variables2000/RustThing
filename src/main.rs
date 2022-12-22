@@ -5,6 +5,11 @@ struct pos {
     x: i64,
     y: i64
 }
+struct pos3d {
+    x: i64,
+    y: i64,
+    z: i64
+}
 fn main() {
     println!("Hello World!");
     update();
@@ -12,6 +17,8 @@ fn main() {
     println!("{} + 1 = {}", a , add_one(a));
     update_two();
     let _position = pos {x: 32, y: 43};
+    let _pos3d = pos3d {x: 64, y: 72, z: 12};
+
 }
 fn update() {
     let my_name: &str = "Twelvetican";
