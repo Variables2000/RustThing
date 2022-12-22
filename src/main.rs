@@ -1,8 +1,6 @@
-fn disable() {
-    #![allow(non_snake_case)]
-    #![allow(non_camel_case_types)]
-    #![allow(dead_code)]
-}
+#![allow(non_snake_case)]
+#![allow(non_camel_case_types)]
+#![allow(dead_code)]
 struct Pos {
     x: i64,
     y: i64
@@ -22,6 +20,16 @@ fn main() {
     let pos3d = Pos3d {x: 64, y: 72, z: 12};
     println!("Test position: x = {}, y = {}", position.x, position.y);
     println!("Test 3D position: x = {}, y = {}, z = {}", pos3d.x, pos3d.y, pos3d.z);
+    get_dice_res();
+}
+fn get_dice_res() {
+    println!("You just rolled {}", randomize());
+}
+fn randomize() -> i64 {
+    use rand::Rng;
+    let mut rng = rand::thread_rng();
+    let i: i64 = rng.gen_range(-999..=999);
+    return i;
 }
 fn update() {
     let my_name: &str = "Twelvetican";
