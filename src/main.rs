@@ -1,6 +1,9 @@
 #![allow(non_snake_case)]
 #![allow(non_camel_case_types)]
 #![allow(dead_code)]
+
+mod extra;
+
 struct Pos {
     x: i64,
     y: i64
@@ -20,6 +23,7 @@ fn main() {
     let pos3d = Pos3d {x: 64, y: 72, z: 12};
     println!("Test position: x = {}, y = {}", position.x, position.y);
     println!("Test 3D position: x = {}, y = {}, z = {}", pos3d.x, pos3d.y, pos3d.z);
+    extra::gref();
     get_dice_res();
 }
 fn get_dice_res() {
